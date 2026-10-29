@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.HashMap;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Store {
     static void main() {
@@ -16,8 +20,7 @@ public class Store {
         }
     }
 
-    // original getInventory() method
-    /* public static ArrayList<Product> getInventory() {
+     public static ArrayList<Product> getInventory() {
         ArrayList<Product> inventory = new ArrayList<Product>();
 
         // this method loads product objects into inventory
@@ -28,15 +31,6 @@ public class Store {
         inventory.add(new Product(3, "Tablet", 1299.99f));
         inventory.add(new Product(4, "Keyboard", 19.99f));
         inventory.add(new Product(5, "Monitor", 99.99f));
-
-        return inventory;
-    } */
-
-    //BONUS getInventory() method
-    public static ArrayList<Product> getInventory() {
-        ArrayList<Product> inventory = new ArrayList<Product>();
-
-
 
         return inventory;
     }
