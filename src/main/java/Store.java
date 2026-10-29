@@ -11,16 +11,32 @@ public class Store {
 
         for (int i = 0; i < inventory.size(); i++) {
             Product p = inventory.get(i);
-            System.out.println("id: %d %s - Price: $%.2f",
+            System.out.printf("id: %d %s - Price: $%.2f || ",
                     p.getId(), p.getName(), p.getPrice());
         }
     }
 
-    public ArrayList<Product> getInventory() {
+    // original getInventory() method
+    /* public static ArrayList<Product> getInventory() {
         ArrayList<Product> inventory = new ArrayList<Product>();
 
         // this method loads product objects into inventory
         // and its details are not shown
+
+        inventory.add(new Product(1, "Laptop", 799.99f));
+        inventory.add(new Product(2, "Mouse", 69.99f));
+        inventory.add(new Product(3, "Tablet", 1299.99f));
+        inventory.add(new Product(4, "Keyboard", 19.99f));
+        inventory.add(new Product(5, "Monitor", 99.99f));
+
+        return inventory;
+    } */
+
+    //BONUS getInventory() method
+    public static ArrayList<Product> getInventory() {
+        ArrayList<Product> inventory = new ArrayList<Product>();
+
+
 
         return inventory;
     }
